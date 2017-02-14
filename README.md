@@ -10,11 +10,11 @@ Shut it down manually with `Ctrl-C`.
 
 ## TODO
 
-* form for all query params
-* integrate with real backend
-* import in intellij
+* integrate with real backend in development mode
+* import module in intellij
 * bundle project and deploy together with backend
-* some basic styling
+* some basic styling (bootstrap or md)
+* enums & dropdowns for fixed lists (contactgroep etc...)
 * specifications page
-* dossierbeheerder and fonds page
+* verantwoordelijke, dossierbeheerder and fonds page
 

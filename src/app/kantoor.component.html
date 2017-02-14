@@ -1,10 +1,30 @@
 <h2>Kantoor opzoeken</h2>
 
 <div>
-    <label>Kantoorcode:</label>
-    <input #kantoorCode />
-    <button (click)="search(kantoorCode.value)">Zoek</button>
+    <div>
+        <label>Kantoorcode:</label>
+        <input [(ngModel)]="criteria.kantoorCode">
+    </div>
+    <div>
+        <label>Contactgroep:</label>
+        <input [(ngModel)]="criteria.contactGroep">
+    </div>
+    <div>
+        <label>Taal:</label>
+        <input [(ngModel)]="criteria.taalForData">
+    </div>
+    <div>
+        <label>User ID:</label>
+        <input [(ngModel)]="criteria.userId">
+    </div>
+    <div>
+        <label>Domein:</label>
+        <input [(ngModel)]="criteria.domein">
+    </div>
+    <button (click)="search()">Zoek</button>
 </div>
+
+<h2>Zoekresultaat:</h2>
 
 <div *ngIf="gevondenKantoor">
     <div><label>Kantoorcode:</label>{{gevondenKantoor.kantoorCode}}</div>

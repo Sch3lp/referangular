@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 
 import { KantoorService } from './kantoor.service';
 import { Kantoor } from './kantoor';
+import { KantoorZoekCriteria } from './kantoor-zoek-criteria';
 
 @Component({
   moduleId: module.id,
@@ -14,14 +15,16 @@ export class KantoorComponent implements OnInit {
 
   gevondenKantoor: Kantoor;
 
+  criteria: KantoorZoekCriteria = <KantoorZoekCriteria>{};
+
   constructor(private kantoorService: KantoorService, private router: Router) {}
 
   ngOnInit(): void {
   }
 
-  search(kantoorCode: string): void {
+  search(): void {
     this.kantoorService
-      .search(kantoorCode, null, null, null, null)
+      .search(this.criteria)
       .subscribe(gevondenKantoor => this.gevondenKantoor = gevondenKantoor);
   }
 
