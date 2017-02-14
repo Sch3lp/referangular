@@ -11,6 +11,7 @@ Shut it down manually with `Ctrl-C`.
 ## TODO
 
 * integrate with real backend in development mode
+* error handling
 * import module in intellij
 * bundle project and deploy together with backend
 * some basic styling (bootstrap or md)
