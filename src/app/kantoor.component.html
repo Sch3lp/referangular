@@ -1,0 +1,13 @@
+<h2>Kantoor opzoeken</h2>
+
+<div>
+    <label>Kantoorcode:</label>
+    <input #kantoorCode />
+    <button (click)="search(kantoorCode.value)">Zoek</button>
+</div>
+
+<div *ngIf="gevondenKantoor">
+    <h2>
+        {{gevondenKantoor.kantoorCode}}
+    </h2>
+</div>
