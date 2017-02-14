@@ -15,6 +15,8 @@ export class KantoorComponent implements OnInit {
 
   gevondenKantoor: Kantoor;
 
+  fout: string;
+
   criteria: KantoorZoekCriteria = <KantoorZoekCriteria>{};
 
   constructor(private kantoorService: KantoorService, private router: Router) {}
@@ -23,9 +25,18 @@ export class KantoorComponent implements OnInit {
   }
 
   search(): void {
+    this.gevondenKantoor = null;
+    this.fout = null;
+
     this.kantoorService
       .search(this.criteria)
-      .subscribe(gevondenKantoor => this.gevondenKantoor = gevondenKantoor);
+      .subscribe(
+          gevondenKantoor => this.gevondenKantoor = gevondenKantoor,
+          error => {
+            this.fout = 'Er is een fout opgetreden!';
+            console.log(error);
+          }
+      );
   }
 
 }
