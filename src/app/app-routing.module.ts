@@ -4,6 +4,7 @@ import { RouterModule, Routes }   from '@angular/router';
 import { KantoorComponent }  from './kantoor/kantoor.component';
 
 const ROUTES: Routes = [
+        { path: '', redirectTo: '/kantoor', pathMatch: 'full' },
     { path: 'kantoor', component: KantoorComponent },
 ];
 
