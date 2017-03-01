@@ -8,8 +8,7 @@ import { KantoorZoekCriteria } from './kantoor-zoek-criteria';
 @Component({
   moduleId: module.id,
   selector: 'rd-kantoor',
-  templateUrl: './kantoor.component.html',
-  styleUrls: [ './kantoor.component.css' ],
+  templateUrl: './kantoor.component.html'
 })
 export class KantoorComponent implements OnInit { 
 
