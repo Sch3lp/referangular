@@ -1,28 +1,38 @@
-<h2>Kantoor opzoeken</h2>
-
-<div>
-    <div>
-        <label>Kantoorcode:</label>
-        <input [(ngModel)]="criteria.kantoorCode">
-    </div>
-    <div>
-        <label>Contactgroep:</label>
-        <input [(ngModel)]="criteria.contactGroep">
-    </div>
-    <div>
-        <label>Taal:</label>
-        <input [(ngModel)]="criteria.taalForData">
-    </div>
-    <div>
-        <label>User ID:</label>
-        <input [(ngModel)]="criteria.userId">
-    </div>
-    <div>
-        <label>Domein:</label>
-        <input [(ngModel)]="criteria.domein">
-    </div>
-    <button (click)="search()">Zoek</button>
-</div>
+<md-card>
+    <md-card-header>
+        <md-card-title><h2>Kantoor opzoeken</h2></md-card-title>
+    </md-card-header>
+    <md-card-content>
+        <div>
+            <md-input-container>
+                <input mdInput placeholder="Kantoorcode" [(ngModel)]="criteria.kantoorCode">
+            </md-input-container>
+        </div>
+        <div>
+            <md-input-container>
+                <input mdInput placeholder="Contactgroep" [(ngModel)]="criteria.contactGroep">
+            </md-input-container>
+        </div>
+        <div>
+            <md-input-container>
+                <input mdInput placeholder="Taal" [(ngModel)]="criteria.taalForData">
+            </md-input-container>
+        </div>
+        <div>
+            <md-input-container>
+                <input mdInput placeholder="User ID" [(ngModel)]="criteria.userId">
+            </md-input-container>
+        </div>
+        <div>
+            <md-input-container>
+                <input mdInput placeholder="Domein" [(ngModel)]="criteria.domein">
+            </md-input-container>
+        </div>
+    </md-card-content>
+    <md-card-actions>
+        <button md-button (click)="search()">Zoek</button>
+    </md-card-actions>
+</md-card>
 
 <h2>Zoekresultaat:</h2>
 
