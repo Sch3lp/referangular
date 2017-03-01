@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'Referentiedata';
+  titel = 'Referentiedata';
+
+  domeinen = ['kantoor', 'dossierbeheerder'];
+
+  hoofdletter(domein: string) {
+    return domein.charAt(0).toUpperCase() + domein.slice(1);
+  }
 }
