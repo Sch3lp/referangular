@@ -5,12 +5,17 @@ h1 {
   font-size: 2.5rem;
 }
 
-.md-sidenav-content {
+.rd-sidenav-fab {
+  background-color: #f4bf75;
+  vertical-align: top !important;
+}
+
+.rd-sidenav-content {
   padding-left: 20px;
 }
 
-.mat-list-item-focus {
-  color: #f4bf75
+.mat-list-item-focus .mat-line {
+  color: #f4bf75;
 }
 
 * {
