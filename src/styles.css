@@ -13,8 +13,9 @@ h1 {
   margin-right: 10px;
 }
 
-.rd-accent {
+.rd-fout {
   color: #f4bf75;
+  font-weight: bold;
 }
 
 .rd-sidenav-fab {
@@ -23,8 +24,8 @@ h1 {
 }
 
 .rd-sidenav-content {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 4em;
+  padding-right: 4em;
   padding-bottom: 20px;
 }
 
@@ -41,13 +42,17 @@ h1 {
 }
 
 .mat-card {
-  padding: 3% !important;
+  padding: 5% !important;
   border-radius: 10px !important;
 }
 
+.mat-card-header-text {
+  margin: 0 20px !important;
+}
+
 md-card {
-  width: 90%;
-  height: 90%;
+  width: 85%;
+  height: 85%;
 }
 
 * {

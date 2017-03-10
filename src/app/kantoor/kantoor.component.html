@@ -1,4 +1,4 @@
-<md-grid-list cols="2" rowHeight="5:4" gutterSize="4em">
+<md-grid-list cols="2" rowHeight="10:9" gutterSize="4em">
     <md-grid-tile>
         <md-card>
             <md-card-header>
@@ -48,7 +48,7 @@
                 <md-card-title><h2>Zoekresultaat</h2></md-card-title>
             </md-card-header>
             <md-card-content>
-                <dl>
+                <dl *ngIf="!fout">
                     <dt>Kantoorcode:</dt>
                     <dd>{{gevondenKantoor?.kantoorCode}}</dd>
                     <dt>Naam:</dt>
@@ -66,7 +66,7 @@
                     <dt>Postcode:</dt>
                     <dd>{{gevondenKantoor?.postcode}}</dd>    
                 </dl>
-                <div *ngIf="fout" class="rd-accent">
+                <div *ngIf="fout" class="rd-fout">
                     {{fout}}
                 </div>
             </md-card-content>
