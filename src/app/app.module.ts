@@ -15,11 +15,14 @@ import { AppComponent }  from './app.component';
 import { KantoorComponent }  from './kantoor/kantoor.component';
 import { KantoorService }  from './kantoor/kantoor.service';
 
+import { KantoorverantwoordelijkeComponent }  from './kantoorverantwoordelijke/kantoorverantwoordelijke.component';
 import { DossierbeheerderComponent }  from './dossierbeheerder/dossierbeheerder.component';
+import { FondsadresComponent }  from './fondsadres/fondsadres.component';
+import { FondsverantwoordelijkeComponent }  from './fondsverantwoordelijke/fondsverantwoordelijke.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, HttpModule, MaterialModule, InMemoryWebApiModule.forRoot(InMemoryDataService), AppRoutingModule ],
-  declarations: [ AppComponent, KantoorComponent, DossierbeheerderComponent ],
+  declarations: [ AppComponent, KantoorComponent, KantoorverantwoordelijkeComponent, DossierbeheerderComponent, FondsadresComponent, FondsverantwoordelijkeComponent ],
   bootstrap:    [ AppComponent ],
   providers:    [ KantoorService ]
 })
