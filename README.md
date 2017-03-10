@@ -10,13 +10,11 @@ Shut it down manually with `Ctrl-C`.
 
 ## TODO
 
-* icoontjes maken voor de andere "domeinen"
+* icoontjes maken voor de andere "entiteiten"
   * http://manytools.org/image/colorize-filter/
   * eerst icoon zo kort mogelijk croppen
   * dan resizen naar 100x100
   * dan canvas vergroten naar 120x120 en icoon centreren (voor rounded avatars)
-* domein is niet de beste naam voor kantoor, dossierbeheerder, ...
-  * domein is reeds de naam van een inputparameter, da's verwarrend
 * templating: er zit veel duplicatie tussen kantoor, dossierbeheerder, ...
   * doe je dat met child routes of bestaat er ook een templating manier?
 * styling

@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   titel = 'Referentiedata';
 
-  domeinen = ['kantoor', 'dossierbeheerder'];
+  entiteiten = ['kantoor', 'dossierbeheerder'];
 
-  hoofdletter(domein: string) {
-    return domein.charAt(0).toUpperCase() + domein.slice(1);
+  hoofdletter(entiteit: string) {
+    return entiteit.charAt(0).toUpperCase() + entiteit.slice(1);
   }
 }

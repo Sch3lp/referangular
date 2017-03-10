@@ -1,9 +1,9 @@
 <md-sidenav-container>
   <md-sidenav mode="push" #sidenav>
     <md-nav-list>
-      <a *ngFor="let domein of domeinen" md-list-item routerLink="/{{domein}}" routerLinkActive="active">
-        <img md-list-avatar src="../assets/{{domein}}_icon.png">
-        <p md-line>{{hoofdletter(domein)}}</p>
+      <a *ngFor="let entiteit of entiteiten" md-list-item routerLink="/{{entiteit}}" routerLinkActive="active">
+        <img md-list-avatar src="../assets/{{entiteit}}_icon.png">
+        <p md-line>{{hoofdletter(entiteit)}}</p>
       </a>
     </md-nav-list>
     <button md-button (click)="sidenav.close()">Sluiten</button>
