@@ -38,23 +38,25 @@
     </md-grid-tile>
 
     <md-grid-tile>
-        <div>
-            <h2>Zoekresultaat</h2>
-
-            <div *ngIf="gevondenKantoor">
-                <div><label>Kantoorcode:</label>{{gevondenKantoor.kantoorCode}}</div>
-                <div><label>Naam:</label>{{gevondenKantoor.naam}}</div>
-                <div><label>Email:</label>{{gevondenKantoor.email}}</div>
-                <div><label>Straat:</label>{{gevondenKantoor.straat}}</div>
-                <div><label>Gemeente:</label>{{gevondenKantoor.gemeente}}</div>
-                <div><label>Huisnummer:</label>{{gevondenKantoor.huisnummer}}</div>
-                <div><label>Bus:</label>{{gevondenKantoor.bus}}</div>
-                <div><label>Postcode:</label>{{gevondenKantoor.postcode}}</div>    
-            </div>
-
-            <div *ngIf="fout">
-                <h3>{{fout}}</h3>
-            </div>
-        </div>
+        <md-card>
+            <md-card-header>
+                <md-card-title><h2>Zoekresultaat</h2></md-card-title>
+            </md-card-header>
+            <md-card-content>
+                <div *ngIf="gevondenKantoor">
+                    <div><label>Kantoorcode:</label>{{gevondenKantoor.kantoorCode}}</div>
+                    <div><label>Naam:</label>{{gevondenKantoor.naam}}</div>
+                    <div><label>Email:</label>{{gevondenKantoor.email}}</div>
+                    <div><label>Straat:</label>{{gevondenKantoor.straat}}</div>
+                    <div><label>Gemeente:</label>{{gevondenKantoor.gemeente}}</div>
+                    <div><label>Huisnummer:</label>{{gevondenKantoor.huisnummer}}</div>
+                    <div><label>Bus:</label>{{gevondenKantoor.bus}}</div>
+                    <div><label>Postcode:</label>{{gevondenKantoor.postcode}}</div>    
+                </div>
+                <div *ngIf="fout">
+                    <h3>{{fout}}</h3>
+                </div>
+            </md-card-content>
+        </md-card>
     </md-grid-tile>
 </md-grid-list>

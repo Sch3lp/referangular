@@ -18,15 +18,16 @@ Steps I used to create similar icons:
 
 ## TODO with the Team
 
-* enums & dropdowns for fixed lists (contactgroep etc...)
-* kantoorverantwoordelijke, dossierbeheerder, fondsadres en fondsverantwoordelijke uitwerken
-* specifications page
 * templating: er zit veel duplicatie tussen kantoor, dossierbeheerder, ...
   * doe je dat met child routes of bestaat er ook een templating manier?
-* styling
-  * create own theme (instead of overriding prebuilt theme colors)
+* enums & dropdowns for fixed lists (contactgroep etc...)
 * integrate backend
   * integrate with real backend in development mode
   * error handling
   * import module in intellij
   * bundle project and deploy together with backend
+* specifications page
+* kantoorverantwoordelijke, dossierbeheerder, fondsadres en fondsverantwoordelijke uitwerken
+* styling
+  * layout met cards en gridlists kan beter
+  * create own theme (instead of overriding prebuilt theme colors)
