@@ -27,7 +27,7 @@ Steps I used to create similar icons:
   * import module in intellij
   * bundle project and deploy together with backend
 * specifications page
+* enter om te zoeken
 * kantoorverantwoordelijke, dossierbeheerder, fondsadres en fondsverantwoordelijke uitwerken
 * styling
-  * layout met cards en gridlists kan beter
   * create own theme (instead of overriding prebuilt theme colors)

@@ -53,17 +53,19 @@
                     <dd>{{gevondenKantoor?.kantoorCode}}</dd>
                     <dt>Naam:</dt>
                     <dd>{{gevondenKantoor?.naam}}</dd>
+                    <dt>Email:</dt>
+                    <dd>{{gevondenKantoor?.email}}</dd>
+                    <dt>Straat:</dt>
+                    <dd>{{gevondenKantoor?.straat}}</dd>
+                    <dt>Gemeente:</dt>
+                    <dd>{{gevondenKantoor?.gemeente}}</dd>
+                    <dt>Huisnummer:</dt>
+                    <dd>{{gevondenKantoor?.huisnummer}}</dd>
+                    <dt>Bus:</dt>
+                    <dd>{{gevondenKantoor?.bus}}</dd>
+                    <dt>Postcode:</dt>
+                    <dd>{{gevondenKantoor?.postcode}}</dd>    
                 </dl>
-                <div *ngIf="gevondenKantoor">
-                    <div><label>Kantoorcode:</label>{{gevondenKantoor.kantoorCode}}</div>
-                    <div><label>Naam:</label>{{gevondenKantoor.naam}}</div>
-                    <div><label>Email:</label>{{gevondenKantoor.email}}</div>
-                    <div><label>Straat:</label>{{gevondenKantoor.straat}}</div>
-                    <div><label>Gemeente:</label>{{gevondenKantoor.gemeente}}</div>
-                    <div><label>Huisnummer:</label>{{gevondenKantoor.huisnummer}}</div>
-                    <div><label>Bus:</label>{{gevondenKantoor.bus}}</div>
-                    <div><label>Postcode:</label>{{gevondenKantoor.postcode}}</div>    
-                </div>
                 <div *ngIf="fout" class="rd-accent">
                     {{fout}}
                 </div>
