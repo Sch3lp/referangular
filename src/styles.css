@@ -7,6 +7,10 @@ h1 {
   font-size: 2.5rem;
 }
 
+.rd-accent {
+  color: #f4bf75;
+}
+
 .rd-sidenav-fab {
   background-color: #f4bf75;
   vertical-align: top !important;

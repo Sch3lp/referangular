@@ -53,8 +53,8 @@
                     <div><label>Bus:</label>{{gevondenKantoor.bus}}</div>
                     <div><label>Postcode:</label>{{gevondenKantoor.postcode}}</div>    
                 </div>
-                <div *ngIf="fout">
-                    <h3>{{fout}}</h3>
+                <div *ngIf="fout" class="rd-accent">
+                    {{fout}}
                 </div>
             </md-card-content>
         </md-card>
