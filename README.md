@@ -38,7 +38,7 @@ Steps I used to create similar icons:
 ## TODO with the Team
 
 * templating: er zit veel duplicatie tussen kantoor, dossierbeheerder, ...
-  * doe je dat met child routes of bestaat er ook een templating manier?
+  * https://scotch.io/tutorials/angular-2-transclusion-using-ng-content
 * enums & dropdowns for fixed lists (contactgroep etc...)
 * integrate backend
   * integrate with real backend in development mode
@@ -49,4 +49,7 @@ Steps I used to create similar icons:
 * enter om te zoeken
 * kantoorverantwoordelijke, dossierbeheerder, fondsadres en fondsverantwoordelijke uitwerken
 * styling
+  * flex?
+  * gridlist height fit
   * create own theme (instead of overriding prebuilt theme colors)
+  * scalet niet goed :-(

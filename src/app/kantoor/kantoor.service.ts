@@ -20,7 +20,7 @@ export class KantoorService {
                .get(`api/kantoor/?kantoorCode=^${criteria.kantoorCode}$`)
                .map(response => response.json().data)
                // in memory api returnt een array / echte api returnt 1 object...
-               .mergeMap(x => x)
+               .flatMap(x => x)
                .first();
   }
 
